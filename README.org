@@ -14,7 +14,7 @@ by Ethan Smith.
 
   #+begin_src bash
     cd ~/quicklisp/local-projects/
-    git clone [TODO insert forked URL]
+    git clone https://github.com/ethanxxxl/cl-sdl2-gfx.git
   #+end_src
 
 
