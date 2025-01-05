@@ -15,7 +15,7 @@
   ((:module autowrap-spec
     :pathname "spec"
     :components
-    ((:static-file "SDL2_gfx.h")
+    ((:static-file "SDL2_gfx_all_modules.h")
      (:static-file "SDL2_gfx.arm-pc-linux-gnu.spec")
      (:static-file "SDL2_gfx.i386-unknown-freebsd.spec")
      (:static-file "SDL2_gfx.i386-unknown-openbsd.spec")

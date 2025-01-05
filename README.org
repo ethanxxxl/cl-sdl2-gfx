@@ -1,0 +1,38 @@
+#+TITLE: cl-sdl2-gfx
+#+AUTHOR: Ethan Smith, Wilfredo Velázquez-Rodríguez
+#+EMAIL: ethansmith.dev@gmail.com, zulu.inuoe@gmail.com
+
+* Overview
+Common Lisp autowrap bindings to the [[http://www.ferzkopp.net/Software/SDL2_gfx/Docs/html/index.html][SDL2_gfx]] library
+
+This library was created by Wilfredo Velázquez-Rodríguez and modified/extended
+by Ethan Smith.
+
+* Installation
+
+  If using quicklisp, download this repo to your local projects directory:
+
+  #+begin_src bash
+    cd ~/quicklisp/local-projects/
+    git clone [TODO insert forked URL]
+  #+end_src
+
+
+* Usage
+  After installing the project on your system, you can load sdl2_gfx into a lisp
+  image:
+
+  #+begin_src lisp
+    (ql:quickload :sdl2-gfx)
+    (require :sdl2-gfx) ;; this may work as well, depending on implentation
+  #+end_src
+
+  Bindings for all modules within SDL2_gfx are generated:
+  - SDL2_gfxPrimitives.h
+  - SDL2_rotozoom.h
+  - SDL2_framerate.h
+  - SDL2_imageFilter.h
+  - SDL2_gfxPrimitives_font.h
+
+  All functions/definitions from SDL2_gfx will be loaded into the ~:sdl2-gfx~
+  package. 
