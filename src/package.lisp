@@ -18,6 +18,10 @@
 ;;;
 ;;;3. This notice may not be removed or altered from any source distribution.
 
-(defpackage #:sdl2-gfx
-  (:use #:cl)
+(defpackage :sdl2-gfx-ffi (:use :sdl2-ffi))
+(defpackage :sdl2-gfx-ffi.accessors (:use :sdl2-ffi.accessors))
+(defpackage :sdl2-gfx-ffi.functions (:use :sdl2-ffi.accessors))
+
+(defpackage :sdl2-gfx
+  (:use :cl :sdl2-gfx-ffi.accessors :sdl2-gfx-ffi.functions)
   (:export))

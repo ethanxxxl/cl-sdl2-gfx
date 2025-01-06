@@ -1,8 +1,10 @@
-(cl:in-package :sdl2-gfx)
+(cl:in-package :sdl2-gfx-ffi)
 
 (autowrap:c-include
  '(sdl2-gfx autowrap-spec "SDL2_gfx_all_modules.h")
  :spec-path '(sdl2-gfx autowrap-spec)
+ :accessor-package :sdl2-gfx-ffi.accessors
+ :function-package :sdl2-gfx-ffi.functions
  :exclude-sources ("/usr/local/lib/clang/([^/]*)/include/(?!stddef.h)"
                    "/usr/include/"
                    "/usr/include/arm-linux-gnueabihf"
